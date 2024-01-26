@@ -18,7 +18,7 @@ def DPLL(cnf):
 
 def unit_propagate(cnf, literal):
     new_cnf = [clause for clause in cnf if literal not in clause]
-    new_cnf = [list(filter(lambda l: l != -literal, clause)) for clause in newCnf]
+    new_cnf = [list(filter(lambda l: l != -literal, clause)) for clause in new_cnf]
     return new_cnf
 
 
