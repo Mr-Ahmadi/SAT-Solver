@@ -252,7 +252,6 @@ class SATSolverCDCL:
                     print(pow(-1, (self.literals[i] + 1)) * (i + 1), end="")
                 else:
                     print(i + 1, end="")
-            print(" 0")
         else:
             print("UNSAT")
 
